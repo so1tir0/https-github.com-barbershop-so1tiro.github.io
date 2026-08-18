@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Борода и Топор — мужской барбершоп</title>
+  <meta name="description" content="Барбершоп «Борода и Топор» — мужские стрижки, королевское бритьё, уход за бородой. Два зала в городе.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800;900&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== ШАПКА ===== -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <header class="header" id="header">
+    <div class="wrap header-inner">
+      <a href="#top" class="logo">БОРОДА <span class="logo-accent">&</span> ТОПОР</a>
+
+      <nav class="nav" id="nav">
+        <a href="#services">Услуги</a>
+        <a href="#masters">Мастера</a>
+        <a href="#gallery">Работы</a>
+        <a href="#locations">Залы</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <a href="#contacts" class="btn header-cta">Записаться <span class="btn-arrow" aria-hidden="true">↗</span></a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Открыть меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ===== ХИРО ===== -->
+    <section class="hero" data-section="01">
+      <!-- ФОТО 1: фон хиро — интерьер зала или процесс стрижки, тёмное/атмосферное фото. Размер: 1920×1080px -->
+      <img src="images/hero-bg.jpg" alt="" class="hero-bg" aria-hidden="true">
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="wrap hero-inner">
+        <p class="eyebrow">Барбершоп · с 2019 года</p>
+        <h1>Стрижка,<br>достойная<br>мужчины</h1>
+        <p class="hero-text">Классические и брутальные стрижки, королевское бритьё опасной бритвой, уход за бородой. Два зала в городе — приходи в тот, что ближе.</p>
+        <div class="hero-actions">
+          <a href="#contacts" class="btn btn-large">Записаться на стрижку <span class="btn-arrow" aria-hidden="true">↗</span></a>
+          <a href="#services" class="btn btn-ghost">Смотреть цены <span class="btn-arrow" aria-hidden="true">↓</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== УСЛУГИ ===== -->
+    <section class="services" id="services" data-section="02">
+      <div class="wrap">
+        <p class="eyebrow">Прайс</p>
+        <h2 class="section-title">Услуги и цены</h2>
+        <ul class="service-list">
+          <li><span>Мужская стрижка</span><span class="dots"></span><span class="price">1 500 ₽</span></li>
+          <li><span>Стрижка машинкой</span><span class="dots"></span><span class="price">900 ₽</span></li>
+          <li><span>Королевское бритьё опасной бритвой</span><span class="dots"></span><span class="price">1 200 ₽</span></li>
+          <li><span>Оформление бороды</span><span class="dots"></span><span class="price">800 ₽</span></li>
+          <li><span>Стрижка + бритьё бороды опасной бритвой</span><span class="dots"></span><span class="price">2 000 ₽</span></li>
+          <li><span>Детская стрижка</span><span class="dots"></span><span class="price">1 000 ₽</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== CTA ПОСЕРЕДИНЕ СТРАНИЦЫ ===== -->
+    <section class="mid-cta" data-section="03">
+      <div class="wrap mid-cta-inner">
+        <p>Определился с услугой? Запишись прямо сейчас — свободные окна разбирают быстро.</p>
+        <a href="#contacts" class="btn">Записаться <span class="btn-arrow" aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <!-- ===== МАСТЕРА ===== -->
+    <section class="masters" id="masters" data-section="04">
+      <div class="wrap">
+        <p class="eyebrow">Команда</p>
+        <h2 class="section-title">Наши мастера</h2>
+        <div class="master-grid">
+          <article class="master-card">
+            <div class="master-media">
+              <!-- ФОТО 2: портрет мастера 1. Размер: 700×900px -->
+              <img src="images/master-1.jpg" alt="Барбер Максим Дроздов">
+            </div>
+            <h3>Максим Дроздов</h3>
+            <p class="master-role">Топ-барбер · 8 лет за креслом</p>
+          </article>
+
+          <article class="master-card">
+            <div class="master-media">
+              <!-- ФОТО 3: портрет мастера 2. Размер: 700×900px -->
+              <img src="images/master-2.jpg" alt="Барбер Роман Гусев">
+            </div>
+            <h3>Роман Гусев</h3>
+            <p class="master-role">Барбер · специалист по бороде</p>
+          </article>
+
+          <article class="master-card">
+            <div class="master-media">
+              <!-- ФОТО 4: портрет мастера 3. Размер: 700×900px -->
+              <img src="images/master-3.jpg" alt="Барбер Егор Соловьёв">
+            </div>
+            <h3>Егор Соловьёв</h3>
+            <p class="master-role">Барбер · классические стрижки</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ГАЛЕРЕЯ РАБОТ ===== -->
+    <section class="gallery" id="gallery" data-section="05">
+      <div class="wrap">
+        <p class="eyebrow">Портфолио</p>
+        <h2 class="section-title">Наши работы</h2>
+        <div class="gallery-grid">
+          <!-- ФОТО 5-10: фото готовых стрижек/бород крупным планом. Размер: 600×600px каждое -->
+          <div class="gallery-item"><img src="images/work-1.jpg" alt="Работа мастера"></div>
+          <div class="gallery-item"><img src="images/work-2.jpg" alt="Работа мастера"></div>
+          <div class="gallery-item"><img src="images/work-3.jpg" alt="Работа мастера"></div>
+          <div class="gallery-item"><img src="images/work-4.jpg" alt="Работа мастера"></div>
+          <div class="gallery-item"><img src="images/work-5.jpg" alt="Работа мастера"></div>
+          <div class="gallery-item"><img src="images/work-6.jpg" alt="Работа мастера"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ОТЗЫВЫ ===== -->
+    <section class="reviews" data-section="06">
+      <div class="wrap">
+        <p class="eyebrow">Отзывы</p>
+        <h2 class="section-title">Что говорят клиенты</h2>
+        <div class="review-grid">
+          <blockquote class="review-card">
+            <p>«Хожу только к Максиму уже год. Всегда чётко по времени, без лишних разговоров, стрижка держит форму три недели точно».</p>
+            <cite>— Игорь, клиент с 2023 года</cite>
+          </blockquote>
+          <blockquote class="review-card">
+            <p>«Королевское бритьё — это отдельный вид искусства. Пришёл один раз попробовать, теперь каждый месяц».</p>
+            <cite>— Артём, клиент с 2024 года</cite>
+          </blockquote>
+          <blockquote class="review-card">
+            <p>«Привожу сюда сына на стрижку с трёх лет — умеют находить подход, не боится кресла».</p>
+            <cite>— Дмитрий, клиент с 2022 года</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ЗАЛЫ ===== -->
+    <section class="locations" id="locations" data-section="07">
+      <div class="wrap">
+        <p class="eyebrow">Адреса</p>
+        <h2 class="section-title">Два зала в городе</h2>
+        <div class="location-grid">
+          <article class="location-card">
+            <div class="location-media">
+              <!-- ФОТО 11: интерьер зала на Ленина. Размер: 800×600px -->
+              <img src="images/location-1.jpg" alt="Зал на Ленина">
+            </div>
+            <span class="location-num">01</span>
+            <h3>На Ленина</h3>
+            <p>ул. Ленина, 24<br>Ежедневно 10:00 – 22:00</p>
+          </article>
+          <article class="location-card">
+            <div class="location-media">
+              <!-- ФОТО 12: интерьер зала на Гагарина. Размер: 800×600px -->
+              <img src="images/location-2.jpg" alt="Зал на Гагарина">
+            </div>
+            <span class="location-num">02</span>
+            <h3>На Гагарина</h3>
+            <p>ул. Гагарина, 7<br>Ежедневно 10:00 – 22:00</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ФИНАЛЬНЫЙ CTA ===== -->
+    <section class="final-cta" data-section="08">
+      <div class="wrap final-cta-inner">
+        <h2>Готов к переменам?</h2>
+        <p>Запишись на стрижку прямо сейчас — выбери удобное время и зал.</p>
+        <a href="#contacts" class="btn btn-large">Записаться на стрижку <span class="btn-arrow" aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== ФУТЕР ===== -->
+  <footer class="footer" id="contacts">
+    <div class="wrap footer-inner">
+      <div class="footer-col">
+        <div class="logo">БОРОДА <span class="logo-accent">&</span> ТОПОР</div>
+        <p class="footer-text">Мужской барбершоп. Стрижка, бритьё, уход за бородой.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Записаться</h4>
+        <p><a href="tel:+70000000000">+7 000 000-00-00</a></p>
+        <p><a href="#" target="_blank" rel="noopener">Написать в Telegram</a></p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Адреса</h4>
+        <p>ул. Ленина, 24</p>
+        <p>ул. Гагарина, 7</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Часы работы</h4>
+        <p>Ежедневно 10:00 – 22:00</p>
+      </div>
+    </div>
+
+    <div class="wrap footer-bottom">
+      <p>© 2026 Борода и Топор. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
