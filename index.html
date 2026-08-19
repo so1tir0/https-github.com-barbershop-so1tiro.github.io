@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Барбершоп «Борода и Топор» — мужские стрижки и уход за бородой</title>
+<meta name="description" content="Барбершоп «Борода и Топор»: мужские стрижки, оформление бороды, бритьё опасной бритвой. Запись онлайн, понятный процесс, без спешки." />
+<meta property="og:title" content="Барбершоп «Борода и Топор»" />
+<meta property="og:description" content="Мужские стрижки, борода, бритьё опасной бритвой. Запись онлайн." />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prata&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#booking">Перейти к записи</a>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top" aria-label="Барбершоп Борода и Топор">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#c8a24a" stroke-width="1.6" aria-hidden="true">
+        <path d="M3 20l8-8"/><path d="M12 3c3 0 6 2 6 5s-3 4-6 4-6-1-6-4 3-5 6-5z"/><path d="M14 10l6 6-3 3-6-6"/>
+      </svg>
+      Борода&nbsp;и&nbsp;Топор
+    </a>
+    <nav class="nav-links" id="navLinks" aria-label="Основная навигация">
+      <a href="#services">Услуги</a>
+      <a href="#prices">Цены</a>
+      <a href="#process">Как мы работаем</a>
+      <a href="#masters">Мастера</a>
+      <a href="#gallery">Работы</a>
+      <a href="#faq">Вопросы</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="btn btn-primary" href="#booking">Записаться</a>
+    <button class="burger" id="burger" aria-label="Меню" aria-expanded="false" aria-controls="navLinks">☰</button>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="hero-placeholder-bg" aria-hidden="true"></div>
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Барбершоп для мужчин</div>
+      <h1>Борода и Топор</h1>
+      <p class="lead">Стрижка, оформление бороды и бритьё опасной бритвой. Работаем по записи: один мастер — один клиент, без очереди и спешки.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#booking">Записаться онлайн</a>
+        <a class="btn btn-ghost" href="#prices">Смотреть цены</a>
+      </div>
+      <div class="hero-facts">
+        <span>Запись по времени</span><span>Мужской зал</span><span>Уход и стайлинг после стрижки</span>
+      </div>
+    </div>
+    <aside class="hero-card">
+      <h3>Ближайшая запись</h3>
+      <p class="muted">Выберите услугу и удобное время — администратор подтвердит визит по телефону.</p>
+      <div class="price-row"><span>Стрижка</span><span class="price">от {{цена}} ₽</span></div>
+      <div class="price-row"><span>Борода</span><span class="price">от {{цена}} ₽</span></div>
+      <div class="price-row"><span>Стрижка + борода</span><span class="price">от {{цена}} ₽</span></div>
+      <a class="btn btn-primary" style="margin-top:22px;width:100%" href="#booking">Выбрать время</a>
+    </aside>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="eyebrow">Услуги</div>
+    <h2>Что мы делаем</h2>
+    <p class="muted" style="max-width:65ch">Базовый набор барбершопа. Точный список процедур и их состав заполняются владельцем — тексты ниже редактируемые.</p>
+    <div class="grid g3" style="margin-top:32px">
+      <article class="card"><h3>Мужская стрижка</h3><p class="muted">Консультация, мытьё головы, стрижка машинкой и ножницами, укладка. Подбираем форму под тип волос и образ жизни.</p></article>
+      <article class="card"><h3>Оформление бороды</h3><p class="muted">Моделирование контура, коррекция длины, горячее полотенце, уход. Форма подбирается по овалу лица.</p></article>
+      <article class="card"><h3>Бритьё опасной бритвой</h3><p class="muted">Классическая процедура с распариванием, бритьём и успокаивающим уходом за кожей.</p></article>
+      <article class="card"><h3>Стрижка + борода</h3><p class="muted">Комплекс за один визит, когда нужно привести в порядок и голову, и бороду.</p></article>
+      <article class="card"><h3>Камуфляж седины</h3><p class="muted">Тонирование волос или бороды с естественным результатом без резкого перехода.</p></article>
+      <article class="card"><h3>Детская стрижка</h3><p class="muted">Стрижка для мальчиков. Возрастные ограничения уточняются администратором.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="prices">
+  <div class="wrap">
+    <div class="eyebrow">Прайс</div>
+    <h2>Цены</h2>
+    <p class="muted">Значения указаны шаблонами <code>{{цена}}</code> и заполняются владельцем. Итоговая стоимость подтверждается мастером до начала работы.</p>
+    <div class="grid g2" style="margin-top:28px">
+      <div class="card">
+        <div class="price-row"><span>Мужская стрижка<br><span class="dur">{{длительность}}</span></span><span class="price">{{цена}} ₽</span></div>
+        <div class="price-row"><span>Стрижка машинкой<br><span class="dur">{{длительность}}</span></span><span class="price">{{цена}} ₽</span></div>
+        <div class="price-row"><span>Детская стрижка<br><span class="dur">{{длительность}}</span></span><span class="price">{{цена}} ₽</span></div>
+      </div>
+      <div class="card">
+        <div class="price-row"><span>Оформление бороды<br><span class="dur">{{длительность}}</span></span><span class="price">{{цена}} ₽</span></div>
+        <div class="price-row"><span>Бритьё опасной бритвой<br><span class="dur">{{длительность}}</span></span><span class="price">{{цена}} ₽</span></div>
+        <div class="price-row"><span>Стрижка + борода<br><span class="dur">{{длительность}}</span></span><span class="price">{{цена}} ₽</span></div>
+      </div>
+    </div>
+    <div style="margin-top:28px"><a class="btn btn-primary" href="#booking">Записаться</a></div>
+  </div>
+</section>
+
+<section id="process">
+  <div class="wrap">
+    <div class="eyebrow">Формат</div>
+    <h2>Как мы работаем</h2>
+    <div class="grid g4 steps" style="margin-top:32px">
+      <div class="step"><h3>Заявка</h3><p class="muted">Оставляете имя, телефон, услугу и удобное время.</p></div>
+      <div class="step"><h3>Подтверждение</h3><p class="muted">Администратор перезванивает и фиксирует время в записи.</p></div>
+      <div class="step"><h3>Работа мастера</h3><p class="muted">Разбор задачи, стрижка или борода, укладка и уход.</p></div>
+      <div class="step"><h3>Рекомендации</h3><p class="muted">Мастер объясняет, как поддерживать форму дома и когда прийти снова.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="masters">
+  <div class="wrap">
+    <div class="eyebrow">Команда</div>
+    <h2>Мастера</h2>
+    <p class="muted">Карточки-заготовки: фото, имя, специализация и опыт заполняются владельцем.</p>
+    <div class="grid g3" style="margin-top:32px">
+      <article class="master-card">
+        <div class="master-media photo-placeholder">Фото мастера</div>
+        <div class="master-body">
+          <h3>{{Имя мастера}}</h3>
+          <p class="muted">Специализация: {{стрижки / борода / бритьё}}<br>Опыт: {{количество лет}}</p>
+        </div>
+      </article>
+      <article class="master-card">
+        <div class="master-media photo-placeholder">Фото мастера</div>
+        <div class="master-body">
+          <h3>{{Имя мастера}}</h3>
+          <p class="muted">Специализация: {{стрижки / борода / бритьё}}<br>Опыт: {{количество лет}}</p>
+        </div>
+      </article>
+      <article class="master-card">
+        <div class="master-media photo-placeholder">Фото мастера</div>
+        <div class="master-body">
+          <h3>{{Имя мастера}}</h3>
+          <p class="muted">Специализация: {{стрижки / борода / бритьё}}<br>Опыт: {{количество лет}}</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="wrap">
+    <div class="eyebrow">Портфолио</div>
+    <h2>Наши работы</h2>
+    <p class="muted">Сюда встанут фотографии готовых работ — стрижек, бород, интерьера зала.</p>
+    <div class="grid g3" style="margin-top:32px">
+      <div class="gallery-item photo-placeholder">Фото работы</div>
+      <div class="gallery-item photo-placeholder">Фото работы</div>
+      <div class="gallery-item photo-placeholder">Фото работы</div>
+      <div class="gallery-item photo-placeholder">Фото работы</div>
+      <div class="gallery-item photo-placeholder">Фото работы</div>
+      <div class="gallery-item photo-placeholder">Фото работы</div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <div class="eyebrow">Отзывы</div>
+    <h2>Что говорят клиенты</h2>
+    <p class="muted">Раздел заполняется реальными отзывами клиентов по мере их поступления.</p>
+    <div class="grid g3" style="margin-top:32px">
+      <div class="card review-card">
+        <blockquote>
+          <p class="muted">{{текст отзыва клиента}}</p>
+          <cite>— {{Имя клиента}}</cite>
+        </blockquote>
+      </div>
+      <div class="card review-card">
+        <blockquote>
+          <p class="muted">{{текст отзыва клиента}}</p>
+          <cite>— {{Имя клиента}}</cite>
+        </blockquote>
+      </div>
+      <div class="card review-card">
+        <blockquote>
+          <p class="muted">{{текст отзыва клиента}}</p>
+          <cite>— {{Имя клиента}}</cite>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="booking">
+  <div class="wrap grid g2" style="align-items:start">
+    <div>
+      <div class="eyebrow">Запись</div>
+      <h2>Записаться в барбершоп</h2>
+      <p class="muted">Заполните форму — администратор свяжется с вами для подтверждения. Форма работает локально: данные не отправляются, пока владелец не подключит обработчик.</p>
+      <p class="muted">Обязательные поля: имя, телефон, услуга и согласие на обработку данных.</p>
+    </div>
+    <form id="bookForm" novalidate>
+      <div class="field" id="f-name">
+        <label for="name">Имя</label>
+        <input id="name" name="name" type="text" maxlength="60" autocomplete="given-name" required />
+        <div class="err">Укажите имя (2–60 символов).</div>
+      </div>
+      <div class="field" id="f-phone">
+        <label for="phone">Телефон</label>
+        <input id="phone" name="phone" type="tel" inputmode="tel" maxlength="20" autocomplete="tel" placeholder="+7 ___ ___-__-__" required />
+        <div class="err">Укажите телефон в формате +7 и 10 цифр.</div>
+      </div>
+      <div class="field" id="f-service">
+        <label for="service">Услуга</label>
+        <select id="service" name="service" required>
+          <option value="">Выберите услугу</option>
+          <option>Мужская стрижка</option>
+          <option>Оформление бороды</option>
+          <option>Бритьё опасной бритвой</option>
+          <option>Стрижка + борода</option>
+          <option>Камуфляж седины</option>
+          <option>Детская стрижка</option>
+        </select>
+        <div class="err">Выберите услугу.</div>
+      </div>
+      <div class="field">
+        <label for="datetime">Желаемые дата и время</label>
+        <input id="datetime" name="datetime" type="datetime-local" />
+      </div>
+      <div class="field">
+        <label for="comment">Комментарий</label>
+        <textarea id="comment" name="comment" rows="3" maxlength="500"></textarea>
+      </div>
+      <div class="field" id="f-agree">
+        <label class="check" for="agree">
+          <input id="agree" type="checkbox" required />
+          <span>Согласен с <button type="button" class="linklike" data-modal="privacy">политикой конфиденциальности</button> и <button type="button" class="linklike" data-modal="terms">пользовательским соглашением</button>.</span>
+        </label>
+        <div class="err">Нужно согласие на обработку данных.</div>
+      </div>
+      <button class="btn btn-primary" type="submit" style="width:100%">Отправить заявку</button>
+      <div class="success" id="formSuccess" role="status">Заявка сформирована. Подключите обработчик отправки в поле <code>{{endpoint}}</code>, чтобы получать её на почту или в CRM.</div>
+      <p class="form-note" style="margin-top:14px">Мы не передаём данные третьим лицам, кроме случаев, предусмотренных законом.</p>
+    </form>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="eyebrow">Вопросы</div>
+    <h2>Частые вопросы</h2>
+    <details><summary>Нужно ли записываться заранее?</summary><p>Да, работа ведётся по записи: так мастер не спешит и укладывается во время процедуры. Возможность визита без записи уточняйте у администратора.</p></details>
+    <details><summary>Сколько длится визит?</summary><p>Длительность каждой услуги указана в прайсе и заполняется владельцем в поле {{длительность}}.</p></details>
+    <details><summary>Можно ли перенести или отменить запись?</summary><p>Да. Условия переноса и отмены устанавливает барбершоп — впишите их в поле {{правила отмены}}.</p></details>
+    <details><summary>Как оплатить?</summary><p>Доступные способы оплаты указывает владелец в поле {{способы оплаты}}.</p></details>
+  </div>
+</section>
+
+<section id="contacts">
+  <div class="wrap grid g2">
+    <div>
+      <div class="eyebrow">Контакты</div>
+      <h2>Как нас найти</h2>
+      <p class="muted">Адрес: {{адрес}}<br>Телефон: {{телефон}}<br>E-mail: {{email}}<br>Часы работы: {{часы работы}}</p>
+      <p class="muted">Поля заполняются владельцем. Карта подключается после указания адреса.</p>
+      <a class="btn btn-primary" href="#booking">Записаться</a>
+    </div>
+    <div class="card photo-placeholder" aria-hidden="true" style="min-height:220px">Место под карту / фото интерьера</div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap foot-grid">
+    <div>
+      <div class="logo" style="margin-bottom:12px">Борода и Топор</div>
+      <p>Барбершоп для мужчин: стрижки, борода, бритьё.</p>
+    </div>
+    <div>
+      <p>{{адрес}}<br>{{телефон}}<br>{{email}}</p>
+    </div>
+    <div>
+      <p>© <span id="year"></span> {{Название юридического лица}}. ИНН {{ИНН}}.</p>
+      <div class="legal-links">
+        <button type="button" data-modal="privacy">Политика конфиденциальности</button>
+        <button type="button" data-modal="terms">Пользовательское соглашение</button>
+        <button type="button" data-modal="cookies">Файлы cookie</button>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Cookie -->
+<div class="cookie" id="cookieBar" role="region" aria-label="Уведомление о cookie">
+  <div class="cookie-in">
+    <p>Мы используем файлы cookie для работы сайта и анализа посещаемости. Продолжая пользоваться сайтом, вы соглашаетесь с их использованием.</p>
+    <div class="cookie-actions">
+      <button class="btn btn-ghost" type="button" data-modal="cookies">Подробнее</button>
+      <button class="btn btn-ghost" type="button" id="cookieDecline">Только необходимые</button>
+      <button class="btn btn-primary" type="button" id="cookieAccept">Принять</button>
+    </div>
+  </div>
+</div>
+
+<!-- Modals -->
+<div class="modal" id="m-privacy" role="dialog" aria-modal="true" aria-labelledby="t-privacy">
+  <div class="modal-box">
+    <div class="modal-head"><h3 id="t-privacy">Политика конфиденциальности</h3><button class="modal-close" type="button" data-close>Закрыть</button></div>
+    <div class="modal-body" tabindex="0">
+      <p><em>Шаблон. Замените значения в фигурных скобках на реальные данные и при необходимости согласуйте текст с юристом.</em></p>
+      <h4>1. Общие положения</h4><p>Настоящая Политика определяет порядок обработки персональных данных посетителей сайта {{домен}}, оператором которых является {{Название юридического лица / ИП}}, ИНН {{ИНН}}, адрес {{адрес}}.</p>
+      <h4>2. Какие данные обрабатываются</h4><p>Имя, номер телефона, адрес электронной почты (если указан), желаемые дата и время визита, комментарий к заявке, а также технические данные: IP-адрес, тип браузера, файлы cookie.</p>
+      <h4>3. Цели обработки</h4><p>Обработка заявок на запись, подтверждение визита, информирование об изменениях в записи, улучшение работы сайта.</p>
+      <h4>4. Основания обработки</h4><p>Согласие субъекта персональных данных, а также исполнение договора об оказании услуг.</p>
+      <h4>5. Срок хранения</h4><p>Данные хранятся {{срок хранения}} либо до отзыва согласия.</p>
+      <h4>6. Передача третьим лицам</h4><p>Данные не передаются третьим лицам, за исключением случаев, предусмотренных законодательством, и привлечённых обработчиков: {{перечень сервисов}}.</p>
+      <h4>7. Права субъекта</h4><p>Вы вправе запросить сведения об обработке, уточнение, блокирование или удаление данных, а также отозвать согласие, направив обращение на {{email}}.</p>
+      <h4>8. Безопасность</h4><p>Оператор принимает организационные и технические меры для защиты данных от неправомерного доступа.</p>
+      <h4>9. Изменения</h4><p>Актуальная редакция публикуется на этой странице. Дата последнего обновления: {{дата}}.</p>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="m-terms" role="dialog" aria-modal="true" aria-labelledby="t-terms">
+  <div class="modal-box">
+    <div class="modal-head"><h3 id="t-terms">Пользовательское соглашение</h3><button class="modal-close" type="button" data-close>Закрыть</button></div>
+    <div class="modal-body" tabindex="0">
+      <p><em>Шаблон. Замените значения в фигурных скобках на реальные данные.</em></p>
+      <h4>1. Предмет</h4><p>Соглашение регулирует использование сайта {{домен}} и оформление предварительной записи на услуги барбершопа.</p>
+      <h4>2. Статус информации</h4><p>Материалы сайта носят информационный характер и не являются публичной офертой. Итоговая стоимость и состав услуги подтверждаются мастером до начала работы.</p>
+      <h4>3. Запись и её изменение</h4><p>Заявка через форму не является подтверждённой записью до момента подтверждения администратором. Правила переноса и отмены: {{правила отмены}}.</p>
+      <h4>4. Обязанности пользователя</h4><p>Пользователь указывает достоверные данные и не использует сайт для действий, нарушающих законодательство или работоспособность сервиса.</p>
+      <h4>5. Оплата</h4><p>Способы оплаты: {{способы оплаты}}. Возврат средств осуществляется в соответствии с законодательством.</p>
+      <h4>6. Ответственность</h4><p>Оператор не несёт ответственности за последствия указания пользователем недостоверных контактных данных.</p>
+      <h4>7. Интеллектуальная собственность</h4><p>Материалы сайта принадлежат {{Название юридического лица / ИП}} и не могут использоваться без письменного разрешения.</p>
+      <h4>8. Заключительные положения</h4><p>Соглашение может изменяться; актуальная редакция размещается на сайте. Редакция от {{дата}}.</p>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="m-cookies" role="dialog" aria-modal="true" aria-labelledby="t-cookies">
+  <div class="modal-box">
+    <div class="modal-head"><h3 id="t-cookies">Использование файлов cookie</h3><button class="modal-close" type="button" data-close>Закрыть</button></div>
+    <div class="modal-body" tabindex="0">
+      <h4>Что такое cookie</h4><p>Небольшие текстовые файлы, которые сайт сохраняет в браузере, чтобы запоминать выбор пользователя и собирать обезличенную статистику.</p>
+      <h4>Категории</h4>
+      <p><strong>Необходимые.</strong> Обеспечивают базовую работу сайта, включая запоминание выбора в этом уведомлении. Отключить нельзя.</p>
+      <p><strong>Аналитические.</strong> Используются, если владелец подключит сервисы аналитики: {{перечень сервисов}}. Включаются только после согласия.</p>
+      <h4>Управление</h4><p>Выбор сохраняется локально в браузере. Вы можете изменить его, очистив данные сайта в настройках браузера.</p>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
